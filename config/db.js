@@ -14,7 +14,7 @@ const connectDB = async () => {
         });
 
         // Connexion à MongoDB
-        await mongoose.connect(process.env.MONGO_URI);
+        await mongoose.connect(process.env.MONGO_URIS);
 
     } catch (err) {
         console.error('Erreur de connexion à MongoDB:', err);
